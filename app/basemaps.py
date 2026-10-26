@@ -82,6 +82,7 @@ def diag(st, cache_dir):
         except Exception as e: return {"prov": p, "ok": False, "error": str(e)}
     with ThreadPoolExecutor(6) as ex: return list(ex.map(one, provs))
 
+
 def get_font(stack, rng, cache_dir):
     f = Path(cache_dir) / "fonts" / stack.replace(",", "_") / f"{rng}.pbf"
     if f.exists(): return f.read_bytes()
