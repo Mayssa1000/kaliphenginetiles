@@ -54,6 +54,5 @@ define("index",["exports","./shared"],(function(t,e){"use strict";var i="4.7.1";
 var maplibregl$1 = maplibregl;
 
 return maplibregl$1;
-
 }));
 //# sourceMappingURL=maplibre-gl.js.map
